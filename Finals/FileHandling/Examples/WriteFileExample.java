@@ -1,3 +1,4 @@
+package Examples;
 import java.io.*;
 
 public class WriteFileExample {

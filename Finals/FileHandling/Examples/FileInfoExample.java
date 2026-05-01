@@ -1,3 +1,4 @@
+package Examples;
 import java.io.File;
 
 public class FileInfoExample {

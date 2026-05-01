@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.Examples;
 
 public class Samples {
     

@@ -1,7 +1,11 @@
 package Finals.Exceptions.Examples;
 
+// You can manually throw an exception using the throw keyword. 
+// This is useful when you want to signal that an error condition has occurred.
 
-// Demonstrating THROWING an unchecked exception (IllegalArgumentException) when age is less than 18
+// Syntax: throw new ExceptionType("Error message");
+
+// Demonstrating THROWs for Exceptions
 public class AgeValidator {
     public static void validateAge(int age) {
         if (age < 18) {
