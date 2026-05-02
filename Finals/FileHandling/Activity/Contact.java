@@ -22,7 +22,8 @@ public class Contact {
     public String getEmail() {
         return email;
     }
-
+    
+    @Override
     public String toString() {
         return "Name: " + name + ", Phone: " + phone + ", Email: " + email;
     }

@@ -9,7 +9,7 @@ public class ContactBook {
         try (BufferedWriter writer = new BufferedWriter(
             new FileWriter(FILENAME, true)
         )) {
-            writer.write(contact.getName() + ", " + contact.getPhone() + ", " + contact.getEmail());
+            writer.write(contact.getName() + "," + contact.getPhone() + "," + contact.getEmail());
             writer.newLine();
             System.out.println("Contact added successfully!");
         } catch (IOException e) {
@@ -30,9 +30,9 @@ public class ContactBook {
             }
 
         } catch (FileNotFoundException e) {
-            System.out.println();
+            System.out.println("No contacts found. File doesn't exist yet.");
         } catch (IOException e) {
-            System.out.println();
+            System.out.println("Error displaying contacts: " + e.getMessage());
         }
     }
 
@@ -56,7 +56,7 @@ public class ContactBook {
                 System.out.println("Contact with name " + name + " not found");
             }
         } catch (FileNotFoundException e) {
-            System.out.println();
+            System.out.println("No contacts file found.");
         } catch (IOException e) {
             System.out.println("Error searching: " + e.getMessage());
         }
